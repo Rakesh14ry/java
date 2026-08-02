@@ -1,0 +1,23 @@
+class Calculator {
+   static int count = 0;
+
+   Calculator() {
+   }
+
+   void add(int var1, int var2) {
+      System.out.println("Integer Addition = " + (var1 + var2));
+      ++count;
+   }
+
+   void add(double var1, double var3) {
+      System.out.println("Decimal Addition = " + (var1 + var3));
+      ++count;
+   }
+
+   public static void main(String[] var0) {
+      Calculator var1 = new Calculator();
+      var1.add(10, 20);
+      var1.add((double)12.5F, (double)7.5F);
+      System.out.println("Total Calculations = " + count);
+   }
+}
